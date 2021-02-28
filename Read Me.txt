@@ -1,0 +1,28 @@
+
+1. Download the Repository from github.
+
+2. Open Code in any Integrated Development Environment (like Visual Studio Code)
+
+3. Install the node_modules (npm install)
+
+4. Run the Code Using ng serve --o
+
+Angular cli command
+
+1. npm install -g @angular/cli
+
+If Project not runnig theb read the below text
+I am using the ui framework (PrimeNg) and bootstrap CSS framework.
+So following command from ui side
+
+1. npm install primeng --save
+
+2. npm install primeicons --save
+
+3. npm install font-awesome --save
+
+4. npm install @angular/cdk --save
+
+5. npm i bootstrap
+
+6. npm install -g tslint
