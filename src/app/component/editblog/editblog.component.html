@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container-fluid">
+    <div class="row">
+      <div class="content-area_box">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-header">
+              <h1 class="main-head">{{Pagehead}} Blog</h1>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-block  mb-2">
+        <div class="row mb-2  cst-top-fix">
+            <div class="col-sm-8">
+                <div class="form-group row">
+                    <label for="tilte" class="col-sm-4 col-form-label ">Tilte : </label>
+                    <div class="col-sm-7">
+                        <input type="text"  [(ngModel)]="BlogData.title"
+                            class="form-control copy_form_underline_blur" id="tilte"
+                            placeholder="blog tilte">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-8">
+                <div class="form-group row">
+                    <label for="blog" class="col-sm-4 col-form-label">blog : </label>
+                    <div class="col-sm-7">
+                        <textarea class="w-100" rows="2" class="form-control copy_form_underline_blur"
+                        [(ngModel)]="BlogData.blog" id="explaination" placeholder="blog description"
+                        ></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 mb-4 float-left doNotPrint">
+            <button *ngIf="!IsNewRequest" type="button" class="btn btn-primary blue-btn hidden-print mr-2"
+                (click)="update()">update</button>
+                <button *ngIf="IsNewRequest" type="button" class="btn btn-primary blue-btn hidden-print mr-2"
+                (click)="saveNewBlog()">Save</button>
+        </div>
+    </div>
+</div>

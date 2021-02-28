@@ -1,0 +1,41 @@
+<div class="header-top">
+  <div class="container-fluid doNotPrint">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="logo-main">
+          <img src="../../../assets/images/grapeCity.png">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div style="float: left;" class="projectname-icon">
+          <p>Blog</p>
+        </div>
+        <div class="userwrap">
+          <div class="username-icon">
+            <button type="submit" class="btn btn-primary logout-btn" (click)="logout()"><i class="fa fa-sign-out"
+                aria-hidden="true"></i> LOGOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar cst-submenu doNotPrint">
+    <ul class="navigation">
+      <li>
+        <a routerLinkActive='active' [routerLink]="['/home/allrecord']">
+          <i class="fa fa-list" aria-hidden="true" pInputText pTooltip="New Blog" tooltipPosition="top"></i>
+          <span>All Blog</span>
+        </a>
+      </li>
+      <li>
+        <a routerLinkActive='active' [routerLink]="['/home/editblog']">
+          <i class="fa fa-plus-square" aria-hidden="true" pInputText pTooltip="New Blog" tooltipPosition="top"></i>
+          <span>Add Blog</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content-area">
+  <router-outlet></router-outlet>
+</div>
