@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { BlogsService } from 'src/app/service/blogs.service';
-import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ConfirmationService } from 'primeng/api';
 import { Message } from 'primeng/api';
 import { MessageService } from 'primeng/api';
@@ -19,7 +18,6 @@ export class AllrecordComponent implements OnInit {
   pageinationcount: any;
 
   constructor(private blogsService: BlogsService, private router: Router,
-    private confirmationService: ConfirmationService,
     private messageService: MessageService) {
     this.GetAllBlogs();
   }
